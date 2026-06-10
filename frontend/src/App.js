@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
        <IssueList issues={issues} setIssues={setIssues} />
-       <hr/>
+       
       <IssueTable issues={issues} setIssues={setIssues} />
       <hr />
      
