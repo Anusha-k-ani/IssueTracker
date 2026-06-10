@@ -1,23 +1,17 @@
-import React from "react";
-import IssueList from "./components/IssueList";
-import IssueAdd from "./components/IssueAdd";
+import React, { useState } from "react";
 import IssueTable from "./components/IssueTable";
-import IssueFilter from "./components/IssueFilter";
-import IssueRow from "./components/IssueRow";
+import IssueList from "./components/IssueList";
+
 function App() {
+  const [issues, setIssues] = useState([]);
+
   return (
     <div>
-      <hr/>
-      <IssueAdd/>
-      <hr/>
-      <IssueFilter/>
-      <hr/>
-      <IssueList />
-      <hr/>
-      <IssueTable/>
-      <hr/>
-
-      
+       <IssueList issues={issues} setIssues={setIssues} />
+       <hr/>
+      <IssueTable issues={issues} setIssues={setIssues} />
+      <hr />
+     
     </div>
   );
 }
