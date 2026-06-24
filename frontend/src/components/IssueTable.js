@@ -47,7 +47,7 @@ function IssueTable({
             <tr>
               <th>Title</th>
               <th>Description</th>
-              <th>Due Date</th>
+              <th>Due Days</th>
               <th>Created By</th>
               <th>Priority</th>
               <th>Status</th>
@@ -79,7 +79,7 @@ function IssueTable({
 
               <td>
                 <input
-                  type="string"
+                  type="number"
                   name="due"
                   value={form.due}
                   onChange={handleFormChange}

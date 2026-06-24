@@ -28,30 +28,7 @@ function IssueRow({
         </span>
       </td>
 
-      <td>
-        <button
-          onClick={() =>
-            onUpdateStatus(issue._id, "In Progress")
-          }
-        >
-          In Progress
-        </button>
-
-        <button
-          onClick={() =>
-            onUpdateStatus(issue._id, "Resolved")
-          }
-        >
-          Resolve
-        </button>
-
-        <button
-          className="delete-btn"
-          onClick={() => onDelete(issue._id)}
-        >
-          Delete
-        </button>
-      </td>
+      
     </tr>
   );
 }

@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// Create issue
+// Creating issue
 router.post("/", async (req, res) => {
   try {
     const issue = await Issue.create(req.body);

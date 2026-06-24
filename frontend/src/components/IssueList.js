@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./IssueList.css";
 function IssueList({
   issues,
   onDelete,
